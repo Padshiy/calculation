@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: roboto, sans-serif, serif;
+    font-weight: 400;
+    color: #5E5658;
+}
+
+#calculation {
+    min-height: 700px;
+    width: 980px;
+    display: block;
+}
+
+.header-calculation {
+    min-height: 700px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: crimson;
+}
+
+.footer-calculation {
+    height: 60%;
+    position: relative;
+    background-color: #EEF3E8;
+    border: 1px solid #8AA5C1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.left-door,
+.right-door {
+    height: 700px;
+    width: 390px;
+    display: inline-block;
+    background: rgb(68, 47, 41);
+    position: relative;
+    float: left;
+}
+
+.form-calculation {
+    height: 700px;
+    width: 200px;
+    display: inline-block;
+    background-color: #EEF3E8;
+    float: left;
+    text-align: center;
+    border: 1px solid #8AA5C1;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1px -1px 1px 0px rgba(50, 50, 50, 0.75) inset;
+    -moz-box-shadow: 1px -1px 1px 0px rgba(50, 50, 50, 0.75) inset;
+    box-shadow: 1px -1px 1px 0px rgba(50, 50, 50, 0.75) inset;
+}
+
+.form-calculation label {
+    cursor: pointer;
+    border: 1px solid #8AA5C1;
+}
+
+/*.form-calculation label:hover {
+    background-color: #E1E1E7;
+    border: 1px solid #5E5658;
+}*/
+
+.door-text {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #8AA5C1;
+    box-sizing: border-box;
+    text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+}
+
+.bg-left-door {
+    height: 95%;
+    width: 100%;
+    padding-top: 5px;
+    background: url(../img/door.png) no-repeat 100%;
+    background-size: 100%;
+}
+
+#left-door-opanelka,
+#right-door-opanelka {
+    height: 525px;
+    width: 252px;
+    background: rgb(68, 47, 41);
+    position: absolute;
+    top: 132px;
+    left: 69px;
+}
+
+#ld-met,
+#ld-filenka,
+#ld-rust,
+#ld-aplication,
+#ld-color-mdf,
+#ld-steklo,
+#ld-still,
+#ld-arrow,
+#rd-met,
+#rd-photo,
+#color-mdf {
+    height: 96%;
+    width: 90%;
+    background: rgb(68, 47, 41);
+    display: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1) inset;
+    margin-top: 14px;
+    margin-left: 12px;
+}
+
+#ld-met,
+#rd-met {
+    display: block;
+}
+
+#petlaya-top div,
+#petlaya-bottom div {
+    height: 20px;
+    width: 7px;
+    display: block;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+}
+
+.ld-stor,
+.rd-stor {
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+
+#petlaya-bottom {
+    bottom: -390px;
+    position: absolute;
+}
+
+#petlaya-top #petlaya-opanelka-top,
+#petlaya-bottom #petlaya-opanelka-bottom {
+    background-color: #27181d;
+}
+
+.bg-right-door {
+    height: 95%;
+    width: 100%;
+    padding-top: 5px;
+    background: url(../img/door.png) no-repeat 100%;
+    background-size: 100%;
+}
+
+#ld-nakladkic {
+    background: url(../img/metal-nakladki/nakladkaccp.png);
+    width: 20px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 35px;
+    top: 145px;
+    position: absolute;
+        z-index: 99;
+}
+
+#ld-nakladkis {
+    background: url(../img/metal-nakladki/nakladkascp.png);
+    width: 20px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 35px;
+    top: 230px;
+    position: absolute;
+        z-index: 99;
+}
+
+#ld-ruchka {
+    background: url(../img/metal-nakladki/handlesr.png);
+    width: 50px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 35px;
+    top: 200px;
+    position: absolute;
+    z-index: 99;
+}
+
+#rd-nakladkic {
+    background: url(../img/metal-nakladki/nakladkaccp.png);
+    width: 20px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 15px;
+    top: 145px;
+    position: absolute;
+}
+
+#rd-nakladkis {
+    background: url(../img/metal-nakladki/nakladkascp.png);
+    width: 20px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 15px;
+    top: 230px;
+    position: absolute;
+        z-index: 99;
+}
+
+#rd-ruchka {
+    background: url(../img/metal-nakladki/handlesl.png);
+    width: 50px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 15px;
+    top: 200px;
+    position: absolute;
+        z-index: 99;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.label-nar-otdelka,
+.label-color-met,
+.label-type-dver,
+.label-vnut-otdelka,
+.label-zamki,
+.label-color-nar-otdelka,
+.label-color-vnut-otdelka,
+.label-nar-mdf-vybor,
+.label-filenka-variant,
+.label-vnr,
+.label-vp,
+.label-np{
+    background: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    text-shadow: 1px 0px 1px rgba(238, 243, 232, 1);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+label > form {
+    width: calc(100% - 225px);
+    height: 800px;
+    background: aliceblue;
+    overflow: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.901961) 0px 3px 20px;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    margin: 65px auto;
+    animation: minimise 500ms linear;
+    padding: 30px;
+    background: -webkit-gradient(linear, 100% 100%, 100% 0%, color-stop(0.57, rgb(230, 230, 230)), to(rgb(255, 255, 255)));
+}
+
+input + label {
+    background-color: azure;
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    margin: 10px;
+}
+
+#nar-otdelka:checked ~ .label-nar-otdelka,
+#color-met:checked ~ .label-color-met,
+#type-dver:checked ~ .label-type-dver,
+#vnut-otdelka:checked ~ .label-vnut-otdelka,
+#zamki:checked ~ .label-zamki,
+#color-nar-otdelka:checked ~ .label-color-nar-otdelka,
+#color-vnut-otdelka:checked ~ .label-color-vnut-otdelka,
+#nar-mdf-vybor:checked ~ .label-nar-mdf-vybor,
+#filenka-variant:checked ~ .label-filenka-variant,
+#vybor-nar-otdelka:checked ~ .label-vnr,
+#vnut-photo:checked ~ .label-vp,
+#nar-photo:checked ~ .label-np{
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+form > input[type="radio"] + label {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    border: 2px solid #4B6084;
+    box-sizing: border-box;
+}
+
+#stor-dver {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+input[name="stor-dver"] + label,
+input[name="scrit-peli"] + label,
+input[name="tolsh-met"] + label,
+input[name="furnitura"] + label {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 2px;
+}
+
+#scrit-peli {
+    display: block;
+    margin: 10px;
+}
+
+.label-type-dver {
+    display: none;
+}
+
+#razmeri {
+    margin-top: 25px;
+    display: block;
+}
+
+span {
+    margin: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    text-align: center;
+    background-color: #E1E1E7;
+    color: #5E5658;
+    font-size: 16px;
+}
+
+#price,
+#color-met-button {
+    background-color: #8AA5C1;
+    color: #EEF3E8;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#color-met-button {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+}
+
+#color-met-button:after {
+    content: 'X';
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 1.5em;
+    padding: 1px 1px 1px 2px;
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    border: 3px solid #fff;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+#petlaya-top {
+    position: absolute;
+}
+
+.type-dver-div {
+    background-color: #EEF3E8;
+    display: none;
+    position: absolute;
+    top: 370px;
+    left: 5px;
+    width: calc(100% - 10px);
+}
+
+#type-dver-form > label,
+#form-nar-otdelka > label,
+#form-zamki > label {
+    width: 170px;
+    height: 260px;
+    background-color: transparent;
+    margin: 10px 5px 10px;
+    position: relative;
+    
+}
+
+figure {
+    background: #5f6a72;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    height: 240px;
+    float: left;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+figcaption {
+    
+    margin: 10px;
+}
+
+input:checked + label > figure {
+    background: #EEF3E8;
+    color: #5f6a72;
+}
+
+#type-dver-form > label > figure > img,
+#form-nar-otdelka > label > figure > img,
+#form-zamki > label > figure > img {
+    height: 180px;
+    width: calc(100% - 20px);
+}
+
+
+input:checked + .tp-form-label + div,
+.form-label-zamki:hover + div {
+    display: block;
+    
+}
+
+#ral6018 {
+    background: url(../img/metal/6018.jpg);
+}
+
+#blackkrokodil,
+#blackkrokodil-arrow {
+    background: url(../img/metal/black%20krokodil.jpg);
+    background-size: 20%;
+}
+
+#blacksatin,
+#blacksatin-arrow {
+    background: url(../img/metal/chernij-barkhat_legran.jpg);
+    background-size: 70%;
+}
+
+#blackshelk,
+#blackshelk-arrow {
+    background: url(../img/metal/chyornyj-muar.jpg);
+    background-size: 50%;
+}
+
+#greykrokodil,
+#greykrokodil-arrow {
+    background: url(../img/metal/krokodil-serii.jpg);
+    background-size: 20%;
+}
+
+#ugolgold,
+#ugolgold-arrow {
+    background: url(../img/metal/ugol%20gold.jpg);
+    background-size: 50%;
+}
+
+#brownkrokodil,
+#brownkrokodil-arrow {
+    background: url(../img/metal/krokodil_korich.jpg);
+    background-size: 20%;
+}
+
+#no-mdf,
+#no-mdf-nar{
+    background: transparent;
+}
+
+#ris1 {
+    background: url(../img/mdf/ris1.png);
+}
+
+#color-mdf,
+#ld-color-mdf {
+    background: url(../img/color-mdf/venge.jpg);
+}
+
+#form-vnut-otdelka > label,
+#form-nar-otdelka-mdf > label,
+#form-filenka-variant > label,
+#form-vnr > label,
+#form-vp > label,
+#form-np > label{
+    background-size: 100%;
+    height: 210px;
+}
+
+#rd-mdf,
+#ld-mdf {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+#ris2 {
+    background: url(../img/mdf/ris2.png);
+}
+
+#random {
+    display: none;
+    text-align: center;
+    border: 2px solid red;
+    color: red;
+    position: absolute;
+    background-color: white;
+}
+
+.form-calculation > #checkbox-tolsh-met {
+visibility: hidden;
+}
+.form-calculation > #checkbox-tolsh-met + .click-tolsh-met {
+width: 135px;
+height: 35px;
+position: relative;
+display: block;
+left: 0;
+top: 0;
+background: azure;
+z-index: 50;
+font: bold 14px Arial;
+cursor: pointer;
+margin: 0 auto;
+}
+.form-calculation > #checkbox-tolsh-met + .click-tolsh-met:before {
+content: "2.0мм";
+position: absolute;
+color: #5E5658;
+top: 10px;
+left: 64%;
+}
+.form-calculation > #checkbox-tolsh-met + .click-tolsh-met:after {
+content: "";
+display: block;
+width: 30px;
+height: 45px;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-o-transition: all .5s ease;
+-ms-transition: all .5s ease;
+transition: all .5s ease;
+position: absolute;
+top: -5px;
+left: 10px;
+background: #8AA5C1;
+}
+.form-calculation > #checkbox-tolsh-met:checked + label:before {
+content: "1.5мм";
+left: 11%;
+color: #5E5658;
+}
+.form-calculation > #checkbox-tolsh-met:checked + label:after {
+left: 95px;
+}
+#ral8017,
+#ral8017-arrow {
+    background: rgb(68, 47, 41);
+}
+
+#ral8014,
+#ral8014-arrow {
+    background: rgb(74, 53, 38);
+}
+
+#ral7016,
+#ral7016-arrow {
+    background: rgb(56, 62, 66);
+}
+
+#ral9006,
+#ral9006-arrow {
+    background: rgb(161, 161, 160);
+}
+
+#ral9002,
+#ral9002-arrow {
+    background: rgb(215, 213, 203);
+}
+
+#ral9001,
+#ral9001-arrow {
+    background: rgb(233, 224, 210);
+}
+
+#ral9016,
+#ral9016-arrow {
+    background: rgb(241, 240, 234);
+}
+
+#ral9003,
+#ral9003-arrow {
+    background: rgb(236, 236, 231);
+}
+
+#ral6005,
+#ral6005-arrow {
+    background: rgb(17, 66, 50);
+}
+
+#ral5010,
+#ral5010-arrow {
+    background: rgb(0, 79, 124);
+}
+
+#ral5005,
+#ral5005-arrow {
+    background: rgb(0, 83, 135);
+}
+
+#ral3005,
+#ral3005-arrow {
+    background: rgb(89, 25, 31);
+}
+
+#ral3011,
+#ral3011-arrow {
+    background: rgb(121, 36, 35);
+}
+
+#ral8003, 
+#ral8003-arrow {
+    background: rgb(126, 75, 38);
+}
+
+#venge,
+#venge-nar {
+    background: url(../img/color-mdf/venge.jpg);
+    background-size: 50%;
+}
+
+#whitederevo,
+#whitederevo-nar {
+    background: url(../img/color-mdf/whitederevo.jpg);
+}
+
+#mahagon,
+#mahagon-nar {
+    background: url(../img/color-mdf/makhagon.jpg);
+    background-size: 50%;
+}
+
+#belendub,
+#belendub-nar {
+    background: url(../img/color-mdf/beleniidub.jpg);
+    background-size: 75%;
+}
+
+#dub,
+#dub-nar {
+    background: url(../img/color-mdf/dub.jpg);
+    background-size: 50%;
+}
+
+#italoreh,
+#italoreh-nar {
+    background: url(../img/color-mdf/italoreh.jpg);
+    background-size: 50%;
+}
+
+#staroederevo,
+#staroederevo-nar {
+    background: url(../img/color-mdf/staroederevo.jpg);
+    background-size: 50%;
+}
+
+#buk,
+#buk-nar {
+    background: url(../img/color-mdf/buk.jpg);
+    background-size: 50%;
+}
+
+.button-label {
+    padding: 5px;
+    background-color: #8AA500;
+}
+
+input[name="input-calculation"] + label + label {
+    display: none;
+}
+input[name="input-calculation"] + label {
+    display: block;
+    margin: 10px;
+    background-color: #8AA5C1;
+    color: #EEF3E8;
+}
+input[name="input-calculation"]:checked + label + label {
+    display: block;
+}
+#label-nar-otdelka {
+    display: block;
+}
+
+#label-nar-mdf-vybor,
+#label-filenka-variant,
+#label-color-nar-otdelka,
+#label-np{
+    display: none;
+}
+
+#ld-arrow,
+#ld-still,
+#ld-rust{
+    height: calc(100% - 50px);
+    width: 145px;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    display: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+#dver-arrow-left {
+    height: 100%;
+    width: 10px;
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#dver-arrow-right {
+    height: 100%;
+    width: 10px;
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#dver-arrow-left > div, #dver-arrow-right > div {
+    height: 99%;
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+    display: block;
+    margin: 2px;
+}
+#form-color-mdf-nar,
+#color-arrow {
+    display: none;
+}
+
+#color-arrow-no {
+    background: transparent;
+}
+
+.text-form {
+    position: absolute;
+    margin: auto;
+    top: 350px;
+    left: 40%;
+    background: wheat;
+    padding: 50px;
+}
+#ld-still {
+    height: calc(100% - 25px);
+    margin: 0;
+    top: 17px;
+    left: 77px;
+    width: 100px;
+}
+
+#ld-still-left {
+    height: 100%;
+    width: 20px;
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ld-still-right {
+    height: 100%;
+    width: 20px;
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1) inset;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+#rust-canvas-right {
+    display: none;
+}
+#rust-canvas-left {
+    display: block;
+    width: 50px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+
+}
+#ld-rust {
+    display: none;
+    left: 45px;
+    width: 140px;
+}
+
+#filenka20 {
+    background: url(../img/mdf/020.png);
+}
+
+#ld-filenka {
+    top: 0;
+    position: absolute;
+    background: transparent;
+}
+
+#filenka25 {
+    background: url(../img/mdf/025.png);
+}
+
+#filenka35 {
+    background: url(../img/mdf/035.png);
+}
+
+#filenka36 {
+    background: url(../img/mdf/036.png);
+}
+
+#filenka43 {
+    background: url(../img/mdf/043.png);
+}
+
+#filenka98 {
+    background: url(../img/mdf/098.png);
+}
+
+#label-color-vnut-otdelka {
+    display: none;
+}
+
+#label-vnut-otdelka,
+#label-vp{
+    display: none;
+}
+
+#img-no-vno,
+#label-no-vnr {
+        background: rgb(68, 47, 41);
+}
+
+#label-mdf-vnr {
+    background: url(../img/mdf.jpg);
+}
+
+#label-photo-vnr {
+    background: url(../img/cat.jpg);
+}
+
+#rd-photo {
+    background: url(../img/photo/01.png);
+}
+
+#ld-aplication {
+    background: url(../img/photo/44.png);
+    position: absolute;
+    top: 0;
+    display: none;
+    box-shadow: none;
+}
+
+.footer-calculation > span > span {
+    display: inline-block;
+}
+.footer-calculation > span {
+    text-align: left;
+}
+#span-input-np,
+#span-input-nar-otdelka,
+#span-filenka-variant,
+#span-color-mdf-nar,
+#span-color-arrow-input {
+    display: none;
+}
+
